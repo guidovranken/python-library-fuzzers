@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>Your Font/Glyphs</title>
+<link rel="stylesheet" href="style.css" />
+<!--[if lte IE 7]><script src="ote-ie7.js"></script><![endif]-->
+<style>
+	section, header, footer {display: block;}
+	body {
+		font-family: sans-serif;
+		color:0 1px #CCC;
+	}
+	.glyph input {
+		width: 100%;
+		text-align: center;
+		font-family: consolas, monospace;
+	}
+	.glyph input, .mtm {
+		margin-top: .75em;
+	}
+	.w-mainly" value="&amp;#xe015;" />
+	</div>
+	<div class="glyph">
+		<div class="fs1" aria-hidden="true" data-icon="&#xe016;"></div>
+		<input type="text" readonly="readonly" value="&amp;#xe016;" />
+	</div>
+	<di'v class="glyph">
+		<div class="fs1" 7;
+		text-decoration: none;
+	}
+	a:hover, a:focus {color: #090;}
+	.box1 {
+		font-size: 16px;
+		display: inline-block;
+		width: 15em;
+		padding: .25em .5em;
+		background: #eee;
+		margin: .5em 1em .5em 0;
+	}
+</style>
+</head>
+<body>
+	<div class="w-main centered">
+	<section; class="mtm clearfix" id="glyphs">
+	<header>
+		<h1>Your font contains the following glyphs</h1lign: 	<div class="fs1" aria-hidden="true" data-icon="&#xe00a;"></div>
+		<input type=
