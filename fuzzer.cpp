@@ -8,8 +8,6 @@
 #include <optional>
 #include <Python.h>
 
-#include "python_coverage.h"
-
 #ifndef PYTHON_HARNESS_PATH
 #error "Define PYTHON_HARNESS_PATH"
 #endif
