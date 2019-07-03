@@ -9,10 +9,10 @@ DYNLOAD_LIBS_PATHS=$(addsuffix *.so,$(addprefix $(CPYTHON_LIB_DYNLOAD_PATH)/,$(D
 PYTHON_LD_FLAGS=$(CPYTHON_INSTALL_PATH)/lib/libpython3.9.a -lutil -lpthread $(DYNLOAD_LIBS_PATHS)
 
 fuzzer-html:
-	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"html.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-html
+	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"$(OUT)/html.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-html
 fuzzer-email:
-	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"email.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-email
+	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"$(OUT)/email.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-email
 fuzzer-httpclient:
-	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"httpclient.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-httpclient
+	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"$(OUT)/httpclient.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-httpclient
 fuzzer-json:
-	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"json.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-json
+	clang++ $(CXXFLAGS) -fsanitize=fuzzer -std=c++17 -I $(CPYTHON_INSTALL_PATH)/include/python3.9/ fuzzer.cpp -DPYTHON_HARNESS_PATH="\"$(OUT)/json.py\"" $(PYTHON_LD_FLAGS) -ldl -o fuzzer-json
