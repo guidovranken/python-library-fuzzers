@@ -57,6 +57,7 @@ extern "C" int LLVMFuzzerInitialize(int* argc, char*** argv) {
     {
         wchar_t *program = Py_DecodeLocale(argv0.c_str(), nullptr);
         Py_SetProgramName(program);
+        PyMem_RawFree(program);
     }
 
     Py_Initialize();
