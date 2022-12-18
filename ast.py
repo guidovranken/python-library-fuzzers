@@ -1,4 +1,7 @@
 import ast
+import warnings
+
+warnings.filterwarnings('ignore')
 
 def FuzzerRunOne(FuzzerInput):
     # Python documentation states:
@@ -10,6 +13,7 @@ def FuzzerRunOne(FuzzerInput):
         return
 
     try:
-        ast.parse(FuzzerInput)
+        parsed = ast.parse(FuzzerInput)
+        unparsed = ast.unparse(parsed)
     except:
         pass
