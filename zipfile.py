@@ -22,6 +22,6 @@ def FuzzerRunOne(FuzzerInput):
                 info.CRC
                 info.compress_size
                 info.file_size
-    except tzipfile.BadZipFile:
+    except zipfile.BadZipFile:
         return
 
