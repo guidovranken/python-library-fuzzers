@@ -1,0 +1,11 @@
+# Configuration for the application
+title = "My App"
+description = """
+  This is a multiline description.
+  It can span multiple lines.
+"""
+
+# Some feature toggles
+[features]
+  enable_feature1 = true
+  enable_feature2 = false
