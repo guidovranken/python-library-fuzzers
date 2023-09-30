@@ -1,0 +1,15 @@
+[server]
+  ip = "192.168.1.1"
+  port = 8080
+
+[database]
+  server = "localhost"
+  ports = [8001, 8002, 8003]
+
+[[users]]
+  name = "Alice"
+  age = 30
+
+[[users]]
+  name = "Bob"
+  age = 35

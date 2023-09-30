@@ -1,0 +1,7 @@
+[[users]]
+  username = "alice"
+  fullname = "Alice Smith"
+
+[[users]]
+  username = "bob"
+  fullname = "Bob Johnson"
